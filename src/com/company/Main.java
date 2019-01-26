@@ -3,25 +3,25 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-       /* TaskFirst first = new TaskFirst();
-        first.readName();*/
+        TaskFirst first = new TaskFirst();
+        first.readName();
         //--------------------------------------
-       /* TaskSecond second = new TaskSecond();
-        second.showNumbers(args);*/
+        TaskSecond second = new TaskSecond();
+        second.showNumbers(args);
         //--------------------------------------
-       /* TaskThird third = new TaskThird();
+        TaskThird third = new TaskThird();
         third.setLength();
         third.setArray();
         third.showArray();
-        third.showLnArray();*/
+        third.showLnArray();
         //---------------------------------------
-       /* TaskFourth fourth = new TaskFourth();
-        fourth.comparePasswords();*/
+        TaskFourth fourth = new TaskFourth();
+        fourth.comparePasswords();
         //---------------------------------------
-       /* TaskFifth fifth = new TaskFifth();
+        TaskFifth fifth = new TaskFifth();
         fifth.setArray2();
         //fifth.setRandArray();
-        fifth.showSumProd();*/
+        fifth.showSumProd();
         //--------------------------------------
         TaskSixth sixth = new TaskSixth();
         sixth.fifth.setArray2();
