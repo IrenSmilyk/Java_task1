@@ -1,3 +1,4 @@
+//-----Вывести заданное количество случайных чисел с переходом и без перехода на новую строку---
 package com.company;
 
 import java.util.Random;
@@ -17,12 +18,12 @@ class TaskThird {
 
     void setArray() {
         for (int i = 0; i < number; i++) {
-            array[i] = ran.nextInt(10);
+            array[i] = ran.nextInt(100);
         }
     }
 
     void showArray() {
-        System.out.print(number + " случайных чисел без перехода на yовую строку: ");
+        System.out.print(number + " случайных чисел(-ла) без перехода на новую строку: ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
         }
@@ -30,7 +31,7 @@ class TaskThird {
     }
 
     void showLnArray() {
-        System.out.println(number + " случайных чисел c перехода на yовую строку: ");
+        System.out.println(number + " случайных чисел(-ла) c перехода на новую строку: ");
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }

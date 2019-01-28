@@ -1,37 +1,21 @@
+//-----Ввести целые числа как аргументы командной строки, подсчитать их суммы (произведения) и вывести результат на консоль---
 package com.company;
 
-import java.util.Random;
-import java.util.Scanner;
-
 class TaskFifth {
-    private Scanner scan = new Scanner(System.in);
-    int n = 6;
-    int[] array = new int[n];
+
     private int sum = 0;
-    private int prod = 1;
+    private long prod = 1;
 
-    void setArray2() {
-        System.out.println("Введите " + n + " целые(-ых) числа(-ел):");
-        for (int i = 0; i < array.length; i++) {
-            array[i] = scan.nextInt();
+    void showSumProd(String[] args) {
+        System.out.print("Аргументы командной строки: ");
+        for (int i = 0; i < args.length; i++) {
+            System.out.print(args[i] + " ");
         }
-    }
-
-    /*void setRandArray() {
-        Random ran = new Random();
-        System.out.println("Случайные " + 5 + " целые(-ых) числа(-ел):");
-        for (int i = 0; i < array.length; i++) {
-            array[i] = ran.nextInt(10);
-            System.out.println(array[i] + " ");
+        for (int i = 0; i < args.length; i++) {
+            sum += Integer.parseInt(args[i]);
+            prod *= Integer.parseInt(args[i]);
         }
-    }*/
-
-    void showSumProd() {
-        for (int i = 0; i < array.length; i++) {
-            sum += array[i];
-            prod *= array[i];
-        }
-        System.out.println("Сумма: " + sum);
+        System.out.println("\nСумма: " + sum);
         System.out.println("Произведение: " + prod);
     }
 }

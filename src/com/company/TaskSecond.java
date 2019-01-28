@@ -1,3 +1,4 @@
+//-----Отобразить в окне консоли аргументы командной строки в обратном порядке------------------
 package com.company;
 
 class TaskSecond {
@@ -10,5 +11,6 @@ class TaskSecond {
         for (int i = array.length - 1; i >= 0; i--) {
             System.out.print(array[i] + " ");
         }
+        System.out.println();
     }
 }
