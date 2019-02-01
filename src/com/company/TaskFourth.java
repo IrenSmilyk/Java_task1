@@ -8,9 +8,8 @@ class TaskFourth {
 
     void comparePasswords() {
         String pass1 = "qwerty";
-        String pass2;
         System.out.print("Введите пароль: ");
-        pass2 = scan.nextLine();
+        String pass2 = scan.nextLine();
         if (pass1.equals(pass2)) {
             System.out.println("Пароль совпадает с образцом.");
         } else System.out.println("Вы ввели неверный пароль!!");

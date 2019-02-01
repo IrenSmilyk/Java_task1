@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class TaskThird {
     private int number = 0;
-    private int [] array;
+    private int[] array;
     private Scanner scan = new Scanner(System.in);
     private Random ran = new Random();
 
@@ -24,16 +24,20 @@ class TaskThird {
 
     void showArray() {
         System.out.print(number + " случайных чисел(-ла) без перехода на новую строку: ");
-        for (int i = 0; i < array.length; i++) {
+       /* for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + " ");
+        }*/
+        for (int i : array) {
+            System.out.print(i + " ");
         }
         System.out.println();
     }
 
     void showLnArray() {
         System.out.println(number + " случайных чисел(-ла) c перехода на новую строку: ");
-        for (int i = 0; i < array.length; i++) {
+        /*for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
-        }
+        }*/
+        for (int i : array) System.out.println(i);
     }
 }
